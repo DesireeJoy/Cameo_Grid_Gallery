@@ -1,15 +1,15 @@
 .page {
 	width: 85%;
-	margin: auto;
+	margin: 0 auto;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
-	margin: 0;
 	padding: 0;
+	background-color: #212121;
 }
 
 .photoArray {
-	width: 100%;
+	padding: 150px 0 0 0;
 	margin: auto;
 	list-style: none;
 	display: grid;
@@ -23,90 +23,105 @@
 
 .gridShape {
 	border-radius: 10px;
-}
-
-.red {
-	background-color: red;
-}
-
-.blue {
-	background-color: dodgerblue;
-}
-
-.red {
-	background-color: red;
-}
-
-.green {
-	background-color: green;
-}
-
-.yellow {
-	background-color: yellow;
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 .gridItemOne {
 	color: white;
 	text-align: center;
+	background-image: url('images/Alaska.jpg');
+	background-position: center;
 }
 
 .gridItemTwo {
 	color: white;
 	text-align: center;
+	background-image: url('images/Xena.jpg');
+	background-position-y: 25%;
 }
 .gridItemThree {
 	color: white;
 	text-align: center;
 	grid-column: 3 / 5;
 	grid-row: 1 / 2;
+	background-image: url('images/ThreeHuskies.jpg');
+	background-position: 15% 45%;
 }
 .gridItemFour {
 	color: white;
 	text-align: center;
 	grid-column: 1 / 2;
 	grid-row: 2 / 4;
+	background-image: url('images/Husky.jpg');
 }
 .gridItemFive {
 	color: white;
 	text-align: center;
 	grid-column: 2 / 3;
 	grid-row: 2 / 3;
+	background-image: url('images/CollieKarma.jpg');
+	background-position: 15% 65%;
 }
 .gridItemSix {
 	color: white;
 	text-align: center;
 	grid-column: 3 / 4;
 	grid-row: 2 / 3;
+	background-image: url('images/HuskyFace.jpg');
 }
 .gridItemSeven {
 	color: white;
 	text-align: center;
+	background-image: url('images/Gandalf.jpg');
+	background-position-y: 65%;
+	-moz-transform: scaleX(-1);
+	-o-transform: scaleX(-1);
+	-webkit-transform: scaleX(-1);
+	transform: scaleX(-1);
+	filter: FlipH;
+	-ms-filter: 'FlipH';
 }
 .gridItemEight {
 	color: white;
 	text-align: center;
 	grid-column: 2 / 3;
 	grid-row: 3 / 5;
+	background-image: url('images/Helicopter.jpg');
 }
 .gridItemNine {
 	color: white;
 	text-align: center;
 	grid-column: 3 / 5;
 	grid-row: 3 / 4;
+	background-image: url('images/DogEyes.jpg');
+	background-position: 25% 70%;
 }
 .gridItemTen {
 	color: white;
 	text-align: center;
+	background-image: url('images/KathyVert.jpg');
+	background-position: center;
 }
 
 .gridItemEleven {
 	color: white;
 	text-align: center;
+	background-image: url('images/Noodle.jpg');
+	background-position-y: 35%;
 }
 
 .gridItemTwelve {
 	color: white;
 	text-align: center;
+	background-image: url('images/Owlivia.jpg');
+	background-position-y: 40%;
+	-moz-transform: scaleX(-1);
+	-o-transform: scaleX(-1);
+	-webkit-transform: scaleX(-1);
+	transform: scaleX(-1);
+	filter: FlipH;
+	-ms-filter: 'FlipH';
 }
 
 @media screen and (max-width: 1200px) {
@@ -130,7 +145,11 @@
 		display: none;
 	}
 	.gridItemSeven {
+		display: none;
+	}
+	.gridItemNine {
 		grid-row: 3 / 4;
+		grid-column: 2 / 4;
 	}
 	.gridItemTen {
 		display: none;
@@ -171,5 +190,10 @@
 	}
 	.gridItemThree {
 		display: none;
+	}
+	.gridItemTwelve {
+		display: block;
+		grid-row: 1 / 2;
+		grid-column: 2 / 3;
 	}
 }
