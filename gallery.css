@@ -200,5 +200,5 @@
 @media screen and (max-width: 800px) {
 	.photoArray {
 		grid-template-rows: repeat(4, 70px);
-		grid-template-columns: repeat(3, 100px);
+		grid-template-columns: repeat(2, 100px);
 	}
