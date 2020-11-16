@@ -1,0 +1,175 @@
+.page {
+	width: 85%;
+	margin: auto;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.photoArray {
+	width: 100%;
+	margin: auto;
+	list-style: none;
+	display: grid;
+	grid-gap: 20px 15px;
+	text-decoration: none;
+	list-style: none;
+	justify-content: center;
+	grid-template-rows: repeat(4, 140px);
+	grid-template-columns: repeat(4, 200px);
+}
+
+.gridShape {
+	border-radius: 10px;
+}
+
+.red {
+	background-color: red;
+}
+
+.blue {
+	background-color: dodgerblue;
+}
+
+.red {
+	background-color: red;
+}
+
+.green {
+	background-color: green;
+}
+
+.yellow {
+	background-color: yellow;
+}
+
+.gridItemOne {
+	color: white;
+	text-align: center;
+}
+
+.gridItemTwo {
+	color: white;
+	text-align: center;
+}
+.gridItemThree {
+	color: white;
+	text-align: center;
+	grid-column: 3 / 5;
+	grid-row: 1 / 2;
+}
+.gridItemFour {
+	color: white;
+	text-align: center;
+	grid-column: 1 / 2;
+	grid-row: 2 / 4;
+}
+.gridItemFive {
+	color: white;
+	text-align: center;
+	grid-column: 2 / 3;
+	grid-row: 2 / 3;
+}
+.gridItemSix {
+	color: white;
+	text-align: center;
+	grid-column: 3 / 4;
+	grid-row: 2 / 3;
+}
+.gridItemSeven {
+	color: white;
+	text-align: center;
+}
+.gridItemEight {
+	color: white;
+	text-align: center;
+	grid-column: 2 / 3;
+	grid-row: 3 / 5;
+}
+.gridItemNine {
+	color: white;
+	text-align: center;
+	grid-column: 3 / 5;
+	grid-row: 3 / 4;
+}
+.gridItemTen {
+	color: white;
+	text-align: center;
+}
+
+.gridItemEleven {
+	color: white;
+	text-align: center;
+}
+
+.gridItemTwelve {
+	color: white;
+	text-align: center;
+}
+
+@media screen and (max-width: 1200px) {
+	.photoArray {
+		grid-template-rows: repeat(4, 140px);
+		grid-template-columns: repeat(3, 200px);
+	}
+	.gridItemThree {
+		grid-column: 2 / 4;
+	}
+	.gridItemTwo {
+		display: none;
+	}
+	.gridItemEleven {
+		display: none;
+	}
+	.gridItemTwelve {
+		display: none;
+	}
+	.gridItemEight {
+		display: none;
+	}
+	.gridItemSeven {
+		grid-row: 3 / 4;
+	}
+	.gridItemTen {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	.photoArray {
+		grid-template-rows: repeat(4, 140px);
+		grid-template-columns: repeat(2, 200px);
+	}
+
+	.gridItemEleven {
+		display: none;
+	}
+	.gridItemTwelve {
+		display: none;
+	}
+	.gridItemEight {
+		display: none;
+	}
+	.gridItemTwo {
+		display: none;
+	}
+	.gridItemSeven {
+		grid-row: 1 / 2;
+	}
+	.gridItemTen {
+		display: none;
+	}
+	.gridItemSix {
+		display: block;
+		grid-row: 3 / 4;
+		grid-column: 2 / 3;
+	}
+	.gridItemNine {
+		display: none;
+	}
+	.gridItemThree {
+		display: none;
+	}
+}
